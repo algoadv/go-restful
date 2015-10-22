@@ -13,7 +13,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/emicklei/go-restful/log"
+	"github.com/algoadv/go-restful/log"
 )
 
 // Container holds a collection of WebServices and a http.ServeMux to dispatch http requests.
@@ -318,7 +318,7 @@ func (c Container) computeAllowedMethods(req *Request) []string {
 				matches := rt.pathExpr.Matcher.FindStringSubmatch(finalMatch)
 				if matches != nil {
 					lastMatch := matches[len(matches)-1]
-					if lastMatch == "" || lastMatch == "/" { // do not include if value is neither empty nor ‘/’.
+					if lastMatch == "" || lastMatch == "/" { // do not include if value is neither empty nor ???/???.
 						methods = append(methods, rt.Method)
 					}
 				}

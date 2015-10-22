@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/emicklei/go-restful"
-	"github.com/emicklei/go-restful/swagger/test_package"
+	"github.com/algoadv/go-restful"
+	"github.com/algoadv/go-restful/swagger/test_package"
 )
 
 func TestInfoStruct_Issue231(t *testing.T) {

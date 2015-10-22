@@ -5,7 +5,7 @@ import (
 	"os"
 	"sync"
 
-	"github.com/emicklei/go-restful/log"
+	"github.com/algoadv/go-restful/log"
 )
 
 // Copyright 2013 Ernest Micklei. All rights reserved.
